@@ -1,0 +1,15 @@
+"D:\IAR for STM32\arm\bin\armproc.dll" 
+
+"D:\IAR for STM32\arm\bin\armjlink2.dll" 
+
+"F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY20180714）\V2.2.0\Projects\EWARM\Debug\Exe\Concentrator.out" 
+
+--plugin "D:\IAR for STM32\arm\bin\armbat.dll" 
+
+--device_macro "D:\IAR for STM32\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
+
+--flash_loader "D:\IAR for STM32\arm\config\flashloader\ST\FlashSTM32F10xxE.board" 
+
+
+
+
