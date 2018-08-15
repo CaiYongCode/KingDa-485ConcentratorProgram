@@ -75,6 +75,8 @@ void MXPC_Thread (void)
   {APPCON_InPut(Input.buff, Input.length, Input.Port); }
   //if(NO_ERR != err)
   //{err =  CJT188_2004_InPut (Input.buff, Input.length, Input.Port);}
+  
+  memset(Input.buff,'\0',MCPX_InputBuffSize);
  }
 }
 /*********************************************************************************
