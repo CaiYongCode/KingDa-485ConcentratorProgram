@@ -175,12 +175,13 @@ SystemErrName KingDaServer_input (void *pbuff, unsigned char length, CommPortNum
     }
   case ReadALLMeasureValue:
     {
-      ReadALLMeasureValue_func (package);
+      ReadALLMeasureValue_func(package);
       break;
     }
   case MeasureValue_UpLoad:   
     {
       MeasureValue_UpLoad_func(package);
+	  SofTimerDel(&(MG2618Infr.TimeOut));
       break;
     } 
   case ServerDeleteNode_APPCON :     //= 0x80, É¾³ý½ÚµãÃüÁî
@@ -259,6 +260,7 @@ SystemErrName KingDaServer_input (void *pbuff, unsigned char length, CommPortNum
   default:
     {return OperateCmd_err;break;}
   }
+  
   return NO_ERR;
 }
 /*********************************************************************************

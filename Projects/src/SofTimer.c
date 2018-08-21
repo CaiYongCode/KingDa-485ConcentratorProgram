@@ -542,8 +542,8 @@ void  SofTimer_Process(void)
           break;
         }
        }
-       Concentrator.CSR.Bit.Updata_flg = 1;
-       LaunchReadAllValue_KindgDa( );
+ //      Concentrator.CSR.Bit.Updata_flg = 1;
+ //      LaunchReadAllValue_KindgDa( );
     } 
    }
 

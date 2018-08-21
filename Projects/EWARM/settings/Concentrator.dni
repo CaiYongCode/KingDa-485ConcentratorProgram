@@ -21,7 +21,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1326015613
+Checksum=-427606087
 [CodeCoverage]
 Enabled=_ 0
 [Exceptions]
@@ -263,9 +263,8 @@ ProbeSetup0=2 1 1 2 0 0
 mode=0
 [Breakpoints2]
 Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\APP\src\Appcon_API.c}.694.8" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\APP\src\ReadEquipData.c}.490.7" 0 0 1 "" 0 "" 0
-Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\APP\src\Appcon_API.c}.685.8" 0 0 1 "" 0 "" 0
-Count=3
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\APP\src\Appcon_API.c}.685.8" 0 0 1 "" 0 "" 0
+Count=2
 [Aliases]
 A0=_ "E:\2016\集中器V2.2\软件\最新\Projects\src\main.c" ""
 A1=_ "I:\最新\Projects\src\main.c" ""

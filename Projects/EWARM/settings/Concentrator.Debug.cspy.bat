@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR for STM32\common\bin\cspybat" -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY20180714）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.general.xcl" --backend -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY20180714）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.driver.xcl" 
+"D:\IAR for STM32\common\bin\cspybat" -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.general.xcl" --backend -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR for STM32\common\bin\cspybat" -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY20180714）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.general.xcl" "--debug_file=%~1" --backend -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY20180714）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.driver.xcl" 
+"D:\IAR for STM32\common\bin\cspybat" -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.general.xcl" "--debug_file=%~1" --backend -f "F:\0中科君达\0项目\集中器资料\485集中器\新版\485集中器软件（CY）\V2.2.0\Projects\EWARM\settings\Concentrator.Debug.driver.xcl" 
 
 @echo off 
 :end
