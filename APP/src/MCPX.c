@@ -509,7 +509,6 @@ void FreeOutputBuffForData_MXPC (void* pbuff)
 static void GetDataForBuff_GPRS (MCPX_InputStruct *buff)
 {
  unsigned char ch = 255;
- char* str = NULL;
  USART2_BuffStruct* package;
  static DataBuffSpec_Struct Data ;
  package = GetDataForBuff_USART2 ( );
@@ -526,20 +525,6 @@ static void GetDataForBuff_GPRS (MCPX_InputStruct *buff)
   buff->Port += ch; 
   while(Data.length -- )
   {buff->buff[Data.length] = Data.pbuff[Data.length];}
- }
- else if( (NULL != strstr((char*)Data.pbuff,"+RECEIVE"))&&(Data.length > 0) )
- {
-   str = strstr((char*)Data.pbuff,"+RECEIVE");
-   if((str[9]>='0')&&(str[9]<='3'))
-   {
-     ch = str[9]-0x30;
-     buff->Port = GPRS_CH0;
-     buff->Port += ch; 
-     buff->length = Data.length; 
-
-      while(Data.length -- )
-      {buff->buff[Data.length] = Data.pbuff[Data.length];}
-   }
  }
  FreeBuff_USART2(package);  
 }

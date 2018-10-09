@@ -552,7 +552,7 @@ SystemErrName TCP_SendStart_MG2618(unsigned char ch,
   cmdbuff.CmdPram.TcpUdp_Send.buff = buff;
   cmdbuff.CmdPram.TcpUdp_Send.callBack = callBack;
   cmdbuff.CmdPram.TcpUdp_Send.callBack_arg = callBack_arg;
-  err = SendCmd_MG2618(&cmdbuff,P_NULL,1,3000);
+  err = SendCmd_MG2618(&cmdbuff,P_NULL,0,3000);
   
   if(NO_ERR == err)
   { 

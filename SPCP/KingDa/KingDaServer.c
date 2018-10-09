@@ -181,7 +181,6 @@ SystemErrName KingDaServer_input (void *pbuff, unsigned char length, CommPortNum
   case MeasureValue_UpLoad:   
     {
       MeasureValue_UpLoad_func(package);
-	  SofTimerDel(&(MG2618Infr.TimeOut));
       break;
     } 
   case ServerDeleteNode_APPCON :     //= 0x80, É¾³ý½ÚµãÃüÁî

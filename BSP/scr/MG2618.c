@@ -1253,7 +1253,7 @@ void Decode_MG2618(unsigned char *gprs_ch, DataBuffSpec_Struct *Data)
    if(CIPSEND == MG2618Infr.Command.Cmd)
    {
      Command_ACK_FuncList_MG2618[MG2618Infr.Command.Cmd](&((Data->pbuff)[itemp]),Data->length);
-     return;
+ //    return;
    }
    else
    {
